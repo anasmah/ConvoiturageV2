@@ -7,10 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.softandroid.convoituragev2.RechercherConvoiturage"
+    tools:context="com.example.softandroid.convoituragev2.PublierConvoiturage"
     android:animationCache="false"
     android:background="@drawable/gradient_background">
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
@@ -59,10 +58,28 @@
             android:textAlignment="center"
             android:layout_gravity="center_horizontal" />
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText7"
+            android:layout_gravity="center_horizontal"
+            android:hint="nombre de places"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText8"
+            android:hint="Description"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal" />
+
         <Button
             android:layout_width="218dp"
             android:layout_height="wrap_content"
-            android:text="RECHERCHER"
+            android:text="PUBLIER"
             android:onClick="startSinglePlayerGame"
             android:id="@+id/button"
             android:layout_marginBottom="10dp"
@@ -76,12 +93,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Rechercher Convoiturage"
+        android:text="Publier Convoiturage"
         android:id="@+id/tv"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="30dp"
         android:textColor="@color/green_main" />
-
 </RelativeLayout>

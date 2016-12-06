@@ -9,22 +9,4 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.softandroid.convoituragev2.MainActivity">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="105dp"
-            android:layout_gravity="center_vertical" >
-
-        </LinearLayout>
-
-    </LinearLayout>
-
 </RelativeLayout>

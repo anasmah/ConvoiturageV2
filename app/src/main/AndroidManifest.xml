@@ -10,7 +10,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".Connecter" />
-        <activity android:name=".RechercherConvoiturage"></activity>
+        <activity android:name=".RechercherConvoiturage" />
+        <activity android:name=".PublierConvoiturage" />
+        <activity android:name=".Inscription"></activity>
     </application>
 
 </manifest>
