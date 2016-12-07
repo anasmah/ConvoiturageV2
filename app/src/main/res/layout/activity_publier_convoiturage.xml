@@ -80,7 +80,6 @@
             android:layout_width="218dp"
             android:layout_height="wrap_content"
             android:text="PUBLIER"
-            android:onClick="startSinglePlayerGame"
             android:id="@+id/button"
             android:layout_marginBottom="10dp"
             android:background="@color/accent_material_dark"
