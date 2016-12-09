@@ -26,35 +26,39 @@
             android:id="@+id/imageView"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.35"
-            android:src="@mipmap/banniere"/>
+            android:src="@drawable/banniere"/>
 
         <ImageButton
-            android:layout_width="300dp"
+            android:layout_width="350dp"
             android:layout_height="70dp"
             android:id="@+id/imageButton"
             android:layout_weight="0.2"
-            android:src="@mipmap/rcov"
+            android:src="@drawable/rcov1"
 
             android:layout_gravity="top|center_horizontal"
-            android:onClick="rechercherCovoiturage" />
+            android:onClick="rechercherCovoiturage"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
 
         <ImageButton
-            android:layout_width="300dp"
+            android:layout_width="350dp"
             android:layout_height="65dp"
             android:id="@+id/imageButton3"
             android:layout_weight="0.2"
             android:layout_gravity="center_horizontal"
-            android:src="@mipmap/publ"
+            android:src="@drawable/pubc1"
 
-            android:onClick="publierCovoiturage" />
+            android:onClick="publierCovoiturage"
+            android:layout_marginBottom="10dp" />
 
         <ImageButton
-            android:layout_width="300dp"
-            android:layout_height="100dp"
+            android:layout_width="320dp"
+            android:layout_height="65dp"
             android:id="@+id/imageButton2"
-            android:layout_gravity="center_horizontal"
-            android:src="@mipmap/connexion111"
-            android:onClick="seConnecter" />
+            android:src="@drawable/cnx4"
+            android:onClick="seConnecter"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
 </RelativeLayout>
