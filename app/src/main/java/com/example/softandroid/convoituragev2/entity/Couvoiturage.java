@@ -22,6 +22,8 @@ public class Couvoiturage {
 
     private int place;
 
+    private Personne publier;
+
     public Couvoiturage() {
     }
 
@@ -104,6 +106,14 @@ public class Couvoiturage {
 
     public void setPlace(int place) {
         this.place = place;
+    }
+
+    public Personne getPublier() {
+        return publier;
+    }
+
+    public void setPublier(Personne publier) {
+        this.publier = publier;
     }
 }
 
