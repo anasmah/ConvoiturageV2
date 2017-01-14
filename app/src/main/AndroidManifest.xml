@@ -3,23 +3,24 @@
     package="com.example.softandroid.convoituragev2">
 
     <application
+        android:name=".application.Couvoiturage"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".application.Couvoiturage"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".SeConnecter" />
         <activity android:name=".RechercherConvoiturage" />
         <activity android:name=".PublierConvoiturage" />
-        <activity android:name=".Inscription"></activity>
+        <activity android:name=".Inscription" />
+        <activity android:name=".ResultatRecherche"></activity>
     </application>
 
 </manifest>
