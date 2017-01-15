@@ -1,6 +1,8 @@
 package com.example.softandroid.convoituragev2.service;
 
 
+import android.util.Log;
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -46,6 +48,7 @@ public class Services {
                 new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                Log.i("INFO",response);
                 callBack.sameOpperation();
 
                 try {
@@ -83,6 +86,7 @@ public class Services {
                 URL_AUTHENTIFICATION + "?email=" + email + "&motdepasse=" + motdepasse, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                Log.i("INFO",response);
                 callBack.sameOpperation();
                 try {
                     JSONObject jsonObject = new JSONObject(response);
@@ -119,6 +123,7 @@ public class Services {
                 URL_PUBLIER_COUVOITURAGE + "/" +personne.getId()+"/couvoiturages", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                Log.i("INFO",response);
                 callBack.sameOpperation();
                 try{
                     JSONObject jsonObject = new JSONObject(response);
@@ -156,9 +161,10 @@ public class Services {
 
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET,
-                URL_RECHERCHE_COUVOITURAGE + "?villeD=" + villeD + "&villeA" + villeA + "&date" + dateS, new Response.Listener<String>() {
+                URL_RECHERCHE_COUVOITURAGE + "?villeD=" + villeD + "&villeA=" + villeA + "&date=" + dateS, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                Log.i("INFO",response);
                 callBack.sameOpperation();
                 try{
                     JSONArray jsonArray = new JSONArray(response);
@@ -174,7 +180,7 @@ public class Services {
                         int place = jsonObject.getInt("place");
                         com.example.softandroid.convoituragev2.entity.Couvoiturage a =
                                 new com.example.softandroid.convoituragev2.entity.Couvoiturage(id,villeD,villeA,date1,marque,message,place);
-                        jsonObject = jsonObject.getJSONObject("personne");
+                        jsonObject = jsonObject.getJSONObject("publier");
                         int idP = jsonObject.getInt("id");
                         String nom = jsonObject.getString("nom");
                         String prenom = jsonObject.getString("prenom");
@@ -205,10 +211,11 @@ public class Services {
 
     public void insrireCouvoiturage(final Personne p, final com.example.softandroid.convoituragev2.entity.Couvoiturage c,final VolleyCallBack<Boolean> callBack){
 
-        StringRequest stringRequest = new StringRequest(Request.Method.GET,
-                URL_INSRIRE_COUVOITURAGE  + "/" + p.getId() + "/" +c.getId(), new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,
+                URL_INSRIRE_COUVOITURAGE  + "/" + p.getId() + "/couvoiturages/" +c.getId(), new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                Log.i("INFO",response);
                 callBack.sameOpperation();
                 try{
                     JSONObject jsonObject= new JSONObject(response);

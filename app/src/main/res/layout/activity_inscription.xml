@@ -47,7 +47,7 @@
             android:id="@+id/emailEditText"
             android:hint="E-mail"
             android:textAlignment="center"
-            android:textColor="@android:drawable/spinner_background"
+
             android:layout_gravity="center_horizontal" />
 
         <EditText

@@ -40,7 +40,7 @@ public class Inscription extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Les champs doivent être tous renseignés",Toast.LENGTH_LONG).show();
             return;
         }
-        if(!passwordEditText.getText().equals(password2EditText.getText())){
+        if(!passwordEditText.getText().toString().equals(password2EditText.getText().toString())){
             Toast.makeText(getApplicationContext(),"Les mots de passe ne sont pas identiques",Toast.LENGTH_LONG).show();
             return;
         }
