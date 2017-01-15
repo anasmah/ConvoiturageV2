@@ -12,6 +12,7 @@ import com.android.volley.toolbox.BasicNetwork;
 import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NoCache;
+import com.example.softandroid.convoituragev2.entity.Personne;
 import com.example.softandroid.convoituragev2.service.Services;
 
 /**
@@ -22,6 +23,8 @@ public class Couvoiturage extends Application{
 
     private static RequestQueue mRequestQueue = null;
     public static Services services = null;
+
+    private Personne personneInSession = null;
 
     {
 
@@ -41,5 +44,13 @@ public class Couvoiturage extends Application{
 
     public static void addRequest(Request request){
         mRequestQueue.add(request);
+    }
+
+    public Personne getPersonneInSession() {
+        return personneInSession;
+    }
+
+    public void setPersonneInSession(Personne personneInSession) {
+        this.personneInSession = personneInSession;
     }
 }

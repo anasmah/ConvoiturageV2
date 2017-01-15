@@ -26,7 +26,7 @@
         <EditText
             android:layout_width="222dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
+            android:id="@+id/villeDEditText"
             android:hint="Ville de départ"
             android:textAlignment="center"
             android:layout_gravity="center_horizontal" />
@@ -34,7 +34,7 @@
         <EditText
             android:layout_width="222dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editText6"
+            android:id="@+id/villeAEditText"
             android:hint="Ville d&apos;arrivée"
             android:textAlignment="center"
             android:layout_gravity="center_horizontal" />
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:inputType="date"
             android:ems="10"
-            android:id="@+id/editText4"
+            android:id="@+id/dateEditText"
             android:hint="Date"
             android:textAlignment="center"
             android:layout_gravity="center_horizontal" />
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:inputType="time"
             android:ems="10"
-            android:id="@+id/editText5"
+            android:id="@+id/heureEditText"
             android:hint="Heure"
             android:textAlignment="center"
             android:layout_gravity="center_horizontal" />
@@ -67,6 +67,7 @@
             android:layout_marginBottom="10dp"
             android:background="@color/accent_material_dark"
             android:textStyle="bold"
+            android:onClick="rechercheCouvoiturage"
             android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
