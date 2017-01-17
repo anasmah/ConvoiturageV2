@@ -30,7 +30,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/nomPublier"
             android:layout_marginLeft="10dp"
-            android:layout_weight="0.11" />
+            android:layout_weight="0.11"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
         <TextView
         android:layout_width="wrap_content"
@@ -42,7 +43,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/prenomPublier"
-            android:layout_marginLeft="60dp" />
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/abc_primary_text_material_light" />
 
 
     </LinearLayout>
@@ -64,7 +66,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/villeD"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -75,7 +78,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/villeA"/>
+        android:id="@+id/villeA"
+        android:textColor="@color/abc_primary_text_material_light" />
 
 
 </LinearLayout>
@@ -102,12 +106,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Voiture:"
-            android:layout_marginLeft="120dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/voiture"/>
 
 
@@ -128,7 +126,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/nbPlaces"/>
+            android:id="@+id/nbPlaces"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -139,7 +138,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/message"/>
+            android:id="@+id/message"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
 
     </LinearLayout>
@@ -147,7 +147,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_height="match_parent"
+        android:layout_height="60dp"
         android:layout_marginTop="50dp">
 
 
