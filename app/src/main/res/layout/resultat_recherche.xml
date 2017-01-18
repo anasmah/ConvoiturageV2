@@ -23,21 +23,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nom:"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/abc_primary_text_material_light" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/nomPublier"
             android:layout_marginLeft="10dp"
-            android:layout_weight="0.11"
             android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
         <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prénom:"
-            android:layout_marginLeft="110dp" />
+            android:layout_marginLeft="110dp"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,7 +61,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ville départ:"
-        android:layout_marginLeft="5dp" />
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,7 +75,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ville d&apos;arrivée:"
-        android:layout_marginLeft="80dp" />
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -95,7 +98,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date:"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -121,7 +125,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nombre de places:"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -133,7 +138,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Message:"
-            android:layout_marginLeft="50dp" />
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
 
         <TextView
             android:layout_width="wrap_content"
